@@ -357,7 +357,7 @@ export function LandingPage() {
       {/* ═══ FOOTER ═════════════════════════════════ */}
       <footer className="border-t border-slate-700/20 py-14 px-6 bg-[#040810]">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-5">
+          {/* <div className="flex items-center justify-center gap-2 mb-5">
             <Shield size={14} className="text-sky-400/50" />
             <span className="text-[11px] uppercase tracking-[0.25em] text-slate-500 font-semibold">Built to Industry Standards</span>
           </div>
@@ -373,7 +373,7 @@ export function LandingPage() {
             <span>Ten States Standards</span>
             <span className="w-1 h-1 rounded-full bg-slate-700" />
             <span>LT2ESWTR</span>
-          </div>
+          </div> */}
           <div className="mt-10 pt-8 border-t border-slate-700/20">
             <p className="text-slate-600 text-xs leading-relaxed max-w-xl mx-auto">
               This simulator is intended for educational and training purposes only. It is not designed for, and must not be used to operate, monitor, or control actual water or wastewater treatment systems.

@@ -42,3 +42,7 @@ screenshots/
 # MCP
 .playwright-mcp/
 .vercel
+
+.claude/
+skills-lock.json
+.agents/

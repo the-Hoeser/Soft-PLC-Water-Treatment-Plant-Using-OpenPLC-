@@ -62,3 +62,62 @@ body {
   stroke-dasharray: none;
   stroke-width: 2.5;
 }
+
+/* ── Landing page ──────────────────────────────────── */
+
+.landing-page {
+  font-family: 'Barlow', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.landing-heading {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+@keyframes landing-fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes landing-glow-pulse {
+  0%, 100% { filter: drop-shadow(0 0 10px rgba(56,189,248,0.25)); }
+  50% { filter: drop-shadow(0 0 24px rgba(56,189,248,0.6)); }
+}
+
+@keyframes landing-scroll-hint {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+
+@keyframes landing-float {
+  0% { transform: translateY(0); opacity: 0; }
+  5% { opacity: 0.4; }
+  95% { opacity: 0.4; }
+  100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+@keyframes landing-grow {
+  to { transform: scaleX(1); }
+}
+
+.landing-animate {
+  opacity: 0;
+  animation: landing-fade-up 0.7s ease-out forwards;
+}
+
+.landing-logo-animate {
+  opacity: 0;
+  animation:
+    landing-fade-up 0.7s ease-out 0.1s forwards,
+    landing-glow-pulse 3s ease-in-out 0.9s infinite;
+}
+
+.landing-scroll-hint {
+  animation: landing-scroll-hint 2s ease-in-out infinite;
+}
+
+.landing-divider {
+  width: 120px;
+  transform: scaleX(0);
+  animation: landing-grow 0.8s ease-out 0.35s forwards;
+}

@@ -40,6 +40,10 @@ tests/
     simulation/  mirrors client/src/simulation/ layout
 ```
 
+## Pre-commit
+
+Always run `npm run build` (from `client/`) before committing changes. The build must pass with no errors.
+
 ## TDD Mandate
 
 **All new simulation logic must be test-driven.** The workflow:

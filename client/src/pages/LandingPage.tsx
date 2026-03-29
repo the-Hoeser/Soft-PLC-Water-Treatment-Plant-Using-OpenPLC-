@@ -2,8 +2,8 @@ import { Fragment } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Droplets, Factory, Monitor, Bell, ArrowRight,
-  ChevronDown, Gauge, Activity, Shield,
-  GraduationCap, BarChart3, Construction,
+  ChevronDown, Gauge, Activity,
+  GraduationCap, BarChart3, Construction, // Shield – re-enable with standards section
 } from 'lucide-react';
 
 /* ─── Static data ───────────────────────────────── */
